@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import SvgIcon from '@/components/SvgIcon/index.vue';
 
 defineProps<{ msg: string }>()
 
@@ -33,6 +34,7 @@ const count = ref(0)
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
   <ElButton>123</ElButton>
+  <SvgIcon icon-class="start"></SvgIcon>
 </template>
 
 <style scoped>
