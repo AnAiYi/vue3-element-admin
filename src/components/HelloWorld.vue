@@ -36,6 +36,7 @@ const count = ref(0)
   <ElButton>123</ElButton>
   <SvgIcon icon-class="start"></SvgIcon>
   <div class="box">scss</div>
+  <div class="text-amber">unocss</div>
 </template>
 
 <style scoped lang="scss">

@@ -11,6 +11,7 @@ import IconsResolver from "unplugin-icons/resolver";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
+import UnoCSS from 'unocss/vite';
 // https://vitejs.dev/config/
 
 const pathSrc = path.resolve(__dirname, "src");
@@ -47,6 +48,7 @@ export default defineConfig({
       // 指定symbolId格式
       symbolId: "icon-[dir]-[name]",
     }),
+    UnoCSS(/** options */)
   ],
   css: {
     // CSS 预处理器
