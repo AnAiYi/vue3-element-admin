@@ -16,7 +16,7 @@ import UnoCSS from 'unocss/vite';
 
 const pathSrc = path.resolve(__dirname, "src");
 console.log("pathSrc", pathSrc);
-
+// console.log('import.meta.env.VITE_APP_BASE_URL',import.meta.env.VITE_APP_BASE_URL)
 export default defineConfig({
   resolve: {
     alias: {
