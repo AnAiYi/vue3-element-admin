@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from "@/components/HelloWorld.vue";
+import {useCounterStore} from '@/store/counter';
+const counterStore = useCounterStore();
 </script>
 
 <template>
@@ -11,6 +13,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <h1> parent</h1>
+  <ElButton  type="primary" @click="counterStore.increment">count is: {{ counterStore.count }}</ElButton>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
