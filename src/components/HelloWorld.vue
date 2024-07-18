@@ -35,10 +35,17 @@ const count = ref(0)
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
   <ElButton>123</ElButton>
   <SvgIcon icon-class="start"></SvgIcon>
+  <div class="box">scss</div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
 .read-the-docs {
   color: #888;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  color: $bg-color;
 }
 </style>
